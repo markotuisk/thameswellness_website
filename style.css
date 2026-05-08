@@ -182,16 +182,6 @@ img {
     margin-top: 80px;
     padding-top: var(--space-xl);
     padding-bottom: var(--space-xl);
-    background: var(--bg-gradient);
-    color: var(--color-white);
-}
-
-.hero h1 {
-    color: var(--color-white);
-}
-
-.hero .intro-copy {
-    color: rgba(255, 255, 255, 0.9);
 }
 
 .grid-2 {
@@ -217,10 +207,7 @@ img {
     margin-bottom: var(--space-s);
 }
 
-.hero .text-overline {
-    color: var(--color-white);
-    opacity: 0.8;
-}
+
 
 .intro-copy {
     font-size: 1.25rem;
