@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    /* Colors - Digital First Framework */
-    --color-deep-blue: #4A69BB;
-    --color-vibrant-purple: #8E54E9;
-    --color-magenta: #E73C7E;
+    /* Colors - Chameleon Framework */
+    --color-gold: #c5a059;
+    --color-charcoal: #222222;
+    --color-slate: #1a1a1a;
     
-    --color-black: #131313;
-    --color-grey-dark: #333333;
-    --color-grey-medium: #666666;
-    --color-grey-light: #f4f4f4;
+    --color-black: #111111;
+    --color-grey-dark: #3a3a3a;
+    --color-grey-medium: #777777;
+    --color-grey-light: #f7f5f0;
     --color-white: #ffffff;
-
-    /* Gradients */
-    --bg-gradient: linear-gradient(135deg, var(--color-deep-blue), var(--color-vibrant-purple), var(--color-magenta));
 
     /* Typography */
     --font-main: 'Inter', sans-serif;
@@ -28,9 +25,9 @@
     --space-xl: 8rem;
 
     /* Border Radius */
-    --radius-s: 6px;
-    --radius-m: 12px;
-    --radius-l: 24px;
+    --radius-s: 2px;
+    --radius-m: 4px;
+    --radius-l: 8px;
     --radius-pill: 100px;
 
     /* Transitions */
@@ -56,16 +53,17 @@ body {
     background-color: var(--color-white);
     overflow-x: hidden;
     font-size: 16px;
+    font-weight: 300;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    color: var(--color-black);
-    font-weight: 800;
+    color: var(--color-charcoal);
+    font-weight: 400;
     line-height: var(--lh-tight);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 a {
@@ -92,39 +90,42 @@ img {
 
 .btn {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     border-radius: var(--radius-pill);
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 0.05em;
     cursor: pointer;
     transition: var(--transition-normal);
-    border: none;
+    border: 1px solid transparent;
 }
 
 .btn-primary {
-    background-color: var(--color-magenta);
+    background-color: var(--color-charcoal);
     color: var(--color-white);
+    border-color: var(--color-gold);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-vibrant-purple);
+    background-color: var(--color-gold);
+    color: var(--color-charcoal);
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(231, 60, 126, 0.2);
+    box-shadow: 0 10px 20px rgba(197, 160, 89, 0.15);
 }
 
 .btn-ghost {
     background-color: transparent;
-    border: 2px solid var(--color-white);
-    color: var(--color-white);
+    border: 1px solid var(--color-charcoal);
+    color: var(--color-charcoal);
 }
 
 .btn-ghost:hover {
-    background-color: var(--color-white);
-    color: var(--color-deep-blue);
+    background-color: var(--color-charcoal);
+    color: var(--color-white);
     transform: translateY(-2px);
 }
 
 .text-highlight {
-    color: var(--color-magenta);
+    color: var(--color-gold);
 }
 
 .section {
@@ -142,12 +143,12 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     padding: var(--space-s) 0;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    transition: var(--transition-normal);
 }
 
 .nav-content {
@@ -158,9 +159,9 @@ img {
 
 .logo-text {
     font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    color: var(--color-black);
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--color-charcoal);
 }
 
 .nav-links {
@@ -169,19 +170,42 @@ img {
 }
 
 .nav-links a {
-    font-weight: 500;
-    color: var(--color-grey-dark);
+    font-weight: 400;
+    color: var(--color-charcoal);
+    letter-spacing: 0.05em;
 }
 
 .nav-links a:hover {
-    color: var(--color-magenta);
+    color: var(--color-gold);
 }
 
 /* Hero Section */
 .hero {
-    margin-top: 80px;
-    padding-top: var(--space-xl);
+    min-height: 90vh;
+    padding-top: calc(80px + var(--space-xl));
     padding-bottom: var(--space-xl);
+    background-image: url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* We need an overlay so the text is legible over the texture */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(247, 245, 240, 0.85); /* Light linen wash */
+    z-index: 0;
+}
+
+.hero > .container {
+    position: relative;
+    z-index: 1;
 }
 
 .grid-2 {
@@ -192,28 +216,28 @@ img {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: var(--space-s) 0;
+    font-weight: 300;
 }
 
 .text-overline {
     display: inline-block;
     padding: 0.25rem 0;
-    color: var(--color-vibrant-purple);
+    color: var(--color-gold);
     font-size: 0.75rem;
-    font-weight: 800;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-bottom: var(--space-s);
 }
 
-
-
 .intro-copy {
     font-size: 1.25rem;
-    color: var(--color-grey-medium);
+    color: var(--color-grey-dark);
     margin-bottom: var(--space-m);
     max-width: 600px;
+    font-weight: 300;
 }
 
 .hero-image {
@@ -221,11 +245,11 @@ img {
 }
 
 .main-img {
-    border-radius: var(--radius-l);
+    border-radius: var(--radius-s);
     width: 100%;
     height: 600px;
     object-fit: cover;
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(197, 160, 89, 0.3);
 }
 
 /* Tabs Section */
@@ -265,30 +289,18 @@ img {
 }
 
 .tab-btn.active {
-    background: var(--color-deep-blue);
+    background: var(--color-charcoal);
     color: var(--color-white);
-    border-color: var(--color-deep-blue);
+    border-color: var(--color-charcoal);
 }
 
 .tabs-content {
     background: var(--color-white);
-    border-radius: var(--radius-l);
+    border-radius: var(--radius-m);
     padding: var(--space-m);
     min-height: 400px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    border-top: 3px solid transparent;
-    background-clip: padding-box;
+    border: 1px solid var(--color-grey-light);
     position: relative;
-}
-
-.tabs-content::before {
-    content: '';
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    z-index: -1;
-    margin-top: -3px; /* same as border-top width */
-    border-radius: inherit;
-    background: var(--bg-gradient);
 }
 
 .tab-panel {
@@ -325,8 +337,8 @@ img {
 }
 
 .btn-text {
-    font-weight: 700;
-    color: var(--color-magenta);
+    font-weight: 500;
+    color: var(--color-gold);
     font-size: 0.9rem;
     letter-spacing: 0.5px;
 }
@@ -334,8 +346,8 @@ img {
 .price-tag {
     display: inline-block;
     font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--color-magenta);
+    font-weight: 600;
+    color: var(--color-gold);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
@@ -347,7 +359,7 @@ img {
     color: var(--color-grey-medium);
     margin: 1rem 0;
     padding-left: 1rem;
-    border-left: 2px solid var(--color-vibrant-purple);
+    border-left: 2px solid var(--color-gold);
 }
 
 /* Footer */
@@ -460,7 +472,7 @@ img {
 }
 
 .benefit-focal-card {
-    background: var(--color-deep-blue);
+    background: var(--color-charcoal);
     color: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -481,7 +493,7 @@ img {
 }
 
 .tag {
-    background: var(--color-vibrant-purple);
+    background: var(--color-gold);
     padding: 0.4rem 1rem;
     border-radius: var(--radius-pill);
     font-size: 0.8rem;
@@ -565,7 +577,8 @@ img {
     align-items: center;
     background: var(--color-white);
     padding: var(--space-xl);
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-l);
+    border: 1px solid var(--color-grey-light);
     margin-top: var(--space-l);
 }
 
