@@ -1,20 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    /* Colors */
-    --color-primary: #c5a059;
-    --color-primary-dark: #9e8147;
-    --color-primary-light: #f9f4e8;
+    /* Colors - Digital First Framework */
+    --color-deep-blue: #4A69BB;
+    --color-vibrant-purple: #8E54E9;
+    --color-magenta: #E73C7E;
+    
     --color-black: #131313;
-    --color-grey-dark: #4a4a4a;
-    --color-grey-medium: #7a7a7a;
+    --color-grey-dark: #333333;
+    --color-grey-medium: #666666;
     --color-grey-light: #f4f4f4;
     --color-white: #ffffff;
 
+    /* Gradients */
+    --bg-gradient: linear-gradient(135deg, var(--color-deep-blue), var(--color-vibrant-purple), var(--color-magenta));
+
     /* Typography */
-    --font-main: 'Outfit', sans-serif;
-    --lh-tight: 1.1;
-    --lh-normal: 1.5;
+    --font-main: 'Inter', sans-serif;
+    --lh-tight: 1.2;
+    --lh-normal: 1.6;
 
     /* Spacing */
     --space-xs: 0.5rem;
@@ -24,14 +28,14 @@
     --space-xl: 8rem;
 
     /* Border Radius */
-    --radius-s: 8px;
-    --radius-m: 16px;
+    --radius-s: 6px;
+    --radius-m: 12px;
     --radius-l: 24px;
     --radius-pill: 100px;
 
     /* Transitions */
     --transition-fast: 0.2s ease;
-    --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -51,6 +55,7 @@ body {
     line-height: var(--lh-normal);
     background-color: var(--color-white);
     overflow-x: hidden;
+    font-size: 16px;
 }
 
 h1,
@@ -58,8 +63,9 @@ h2,
 h3,
 h4 {
     color: var(--color-black);
-    font-weight: 700;
+    font-weight: 800;
     line-height: var(--lh-tight);
+    letter-spacing: -0.02em;
 }
 
 a {
@@ -95,18 +101,30 @@ img {
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
+    background-color: var(--color-magenta);
     color: var(--color-white);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-vibrant-purple);
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(32, 92, 42, 0.2);
+    box-shadow: 0 10px 20px rgba(231, 60, 126, 0.2);
+}
+
+.btn-ghost {
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.btn-ghost:hover {
+    background-color: var(--color-white);
+    color: var(--color-deep-blue);
+    transform: translateY(-2px);
 }
 
 .text-highlight {
-    color: var(--color-primary);
+    color: var(--color-magenta);
 }
 
 .section {
@@ -124,10 +142,12 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--color-grey-light);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: var(--space-s) 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
 
 .nav-content {
@@ -154,13 +174,24 @@ img {
 }
 
 .nav-links a:hover {
-    color: var(--color-primary);
+    color: var(--color-magenta);
 }
 
 /* Hero Section */
 .hero {
     margin-top: 80px;
     padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    background: var(--bg-gradient);
+    color: var(--color-white);
+}
+
+.hero h1 {
+    color: var(--color-white);
+}
+
+.hero .intro-copy {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .grid-2 {
@@ -175,17 +206,20 @@ img {
     margin: var(--space-s) 0;
 }
 
-.pill-tag {
+.text-overline {
     display: inline-block;
-    padding: 0.5rem 1.25rem;
-    background-color: var(--color-primary-light);
-    color: var(--color-primary);
-    border-radius: var(--radius-pill);
-    font-size: 0.875rem;
-    font-weight: 600;
+    padding: 0.25rem 0;
+    color: var(--color-vibrant-purple);
+    font-size: 0.75rem;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-bottom: var(--space-s);
+}
+
+.hero .text-overline {
+    color: var(--color-white);
+    opacity: 0.8;
 }
 
 .intro-copy {
@@ -210,17 +244,15 @@ img {
 /* Tabs Section */
 .section-title {
     font-size: 2.5rem;
-    margin: var(--space-s) auto var(--space-m);
+    margin: var(--space-s) 0 var(--space-m);
     max-width: 900px;
 }
 
 .text-center {
-    text-align: center;
+    text-align: left;
 }
 
 .max-width-800 {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 800px;
 }
 
@@ -246,9 +278,9 @@ img {
 }
 
 .tab-btn.active {
-    background: var(--color-primary);
+    background: var(--color-deep-blue);
     color: var(--color-white);
-    border-color: var(--color-primary);
+    border-color: var(--color-deep-blue);
 }
 
 .tabs-content {
@@ -256,7 +288,20 @@ img {
     border-radius: var(--radius-l);
     padding: var(--space-m);
     min-height: 400px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-top: 3px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+}
+
+.tabs-content::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin-top: -3px; /* same as border-top width */
+    border-radius: inherit;
+    background: var(--bg-gradient);
 }
 
 .tab-panel {
@@ -294,7 +339,7 @@ img {
 
 .btn-text {
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-magenta);
     font-size: 0.9rem;
     letter-spacing: 0.5px;
 }
@@ -303,7 +348,7 @@ img {
     display: inline-block;
     font-size: 0.75rem;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-magenta);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
@@ -315,7 +360,7 @@ img {
     color: var(--color-grey-medium);
     margin: 1rem 0;
     padding-left: 1rem;
-    border-left: 2px solid var(--color-primary);
+    border-left: 2px solid var(--color-vibrant-purple);
 }
 
 /* Footer */
@@ -424,14 +469,21 @@ img {
 
 .benefit-card i {
     font-size: 1.5rem;
-    color: var(--color-primary);
+    color: var(--color-magenta);
 }
 
 .benefit-focal-card {
-    background: var(--color-primary-light);
+    background: var(--color-deep-blue);
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.benefit-focal-card h3, 
+.benefit-focal-card h4, 
+.benefit-focal-card p {
+    color: var(--color-white);
 }
 
 .tag-cloud {
@@ -442,12 +494,12 @@ img {
 }
 
 .tag {
-    background: var(--color-white);
+    background: var(--color-vibrant-purple);
     padding: 0.4rem 1rem;
     border-radius: var(--radius-pill);
     font-size: 0.8rem;
     font-weight: 600;
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
 /* Team Section */
