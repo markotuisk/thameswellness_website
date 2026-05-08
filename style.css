@@ -25,9 +25,10 @@
     --space-xl: 8rem;
 
     /* Border Radius */
-    --radius-s: 2px;
-    --radius-m: 4px;
-    --radius-l: 8px;
+    --radius-s: 4px;
+    --radius-m: 12px;
+    --radius-l: 24px;
+    --radius-xl: 32px;
     --radius-pill: 100px;
 
     /* Transitions */
@@ -144,18 +145,15 @@ img {
     width: 100%;
     z-index: 1000;
     
-    /* Liquid Glass Effect */
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
-    
-    /* Border Highlights */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    
-    /* Variable Shadowing */
+    /* Apple Liquid Glass */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px) saturate(200%);
+    -webkit-backdrop-filter: blur(40px) saturate(200%);
+    border-bottom: none;
     box-shadow: 
-        0 4px 6px rgba(0, 0, 0, 0.02),
-        0 24px 40px rgba(0, 0, 0, 0.04);
+        inset 0 -0.5px 0 rgba(255, 255, 255, 0.4), 
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1), 
+        0 8px 32px rgba(0, 0, 0, 0.05);
         
     padding: var(--space-s) 0;
     transition: var(--transition-normal);
@@ -335,13 +333,15 @@ img {
     min-height: 400px;
     position: relative;
     
-    /* Liquid Glass Light */
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 24px 40px rgba(0, 0, 0, 0.04);
+    /* Apple Liquid Glass */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px) saturate(200%);
+    -webkit-backdrop-filter: blur(40px) saturate(200%);
+    border: none;
+    box-shadow: 
+        inset 0 0.5px 0 rgba(255, 255, 255, 0.6), 
+        inset 0 0 0 1px rgba(255, 255, 255, 0.2), 
+        0 12px 32px rgba(0, 0, 0, 0.08);
 }
 
 .tab-panel {
@@ -447,13 +447,15 @@ img {
     border-radius: var(--radius-l);
     display: inline-block;
     
-    /* Liquid Glass Light */
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 24px 40px rgba(0, 0, 0, 0.04);
+    /* Apple Liquid Glass */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px) saturate(200%);
+    -webkit-backdrop-filter: blur(40px) saturate(200%);
+    border: none;
+    box-shadow: 
+        inset 0 0.5px 0 rgba(255, 255, 255, 0.6), 
+        inset 0 0 0 1px rgba(255, 255, 255, 0.2), 
+        0 12px 32px rgba(0, 0, 0, 0.08);
 }
 
 .contact-box p {
@@ -507,13 +509,15 @@ img {
     padding: var(--space-m);
     border-radius: var(--radius-l);
     
-    /* Liquid Glass Light */
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 24px 40px rgba(0, 0, 0, 0.04);
+    /* Apple Liquid Glass */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px) saturate(200%);
+    -webkit-backdrop-filter: blur(40px) saturate(200%);
+    border: none;
+    box-shadow: 
+        inset 0 0.5px 0 rgba(255, 255, 255, 0.6), 
+        inset 0 0 0 1px rgba(255, 255, 255, 0.2), 
+        0 12px 32px rgba(0, 0, 0, 0.08);
 }
 
 .benefit-card h4 {
@@ -633,13 +637,15 @@ img {
     border-radius: var(--radius-l);
     margin-top: var(--space-l);
     
-    /* Liquid Glass Light */
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 24px 40px rgba(0, 0, 0, 0.04);
+    /* Apple Liquid Glass */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px) saturate(200%);
+    -webkit-backdrop-filter: blur(40px) saturate(200%);
+    border: none;
+    box-shadow: 
+        inset 0 0.5px 0 rgba(255, 255, 255, 0.6), 
+        inset 0 0 0 1px rgba(255, 255, 255, 0.2), 
+        0 12px 32px rgba(0, 0, 0, 0.08);
 }
 
 .quote-text {
@@ -666,13 +672,15 @@ img {
     overflow: hidden;
     margin-bottom: var(--space-l);
     
-    /* Liquid Glass Light */
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 24px 40px rgba(0, 0, 0, 0.04);
+    /* Apple Liquid Glass */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px) saturate(200%);
+    -webkit-backdrop-filter: blur(40px) saturate(200%);
+    border: none;
+    box-shadow: 
+        inset 0 0.5px 0 rgba(255, 255, 255, 0.6), 
+        inset 0 0 0 1px rgba(255, 255, 255, 0.2), 
+        0 12px 32px rgba(0, 0, 0, 0.08);
 }
 
 .post-featured .post-image {
@@ -696,13 +704,15 @@ img {
     border-radius: var(--radius-l);
     overflow: hidden;
     
-    /* Liquid Glass Light */
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 24px 40px rgba(0, 0, 0, 0.04);
+    /* Apple Liquid Glass */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px) saturate(200%);
+    -webkit-backdrop-filter: blur(40px) saturate(200%);
+    border: none;
+    box-shadow: 
+        inset 0 0.5px 0 rgba(255, 255, 255, 0.6), 
+        inset 0 0 0 1px rgba(255, 255, 255, 0.2), 
+        0 12px 32px rgba(0, 0, 0, 0.08);
 }
 
 .post-card .post-image {
