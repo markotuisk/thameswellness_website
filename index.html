@@ -15,7 +15,13 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-content">
-            <div class="logo">
+            <div class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="#c5a059" stroke-width="4"/>
+                    <path d="M 25 35 Q 37.5 25 50 35 T 75 35" fill="none" stroke="#c5a059" stroke-width="6" stroke-linecap="round"/>
+                    <path d="M 25 50 Q 37.5 40 50 50 T 75 50" fill="none" stroke="#c5a059" stroke-width="6" stroke-linecap="round"/>
+                    <path d="M 25 65 Q 37.5 55 50 65 T 75 65" fill="none" stroke="#c5a059" stroke-width="6" stroke-linecap="round"/>
+                </svg>
                 <span class="logo-text">THAMES<span class="text-highlight">WELLNESS</span></span>
             </div>
             <ul class="nav-links">
@@ -37,11 +43,9 @@
                 <span class="text-overline">Who | About</span>
                 <h1>Creating healthier and more <span class="text-highlight">resilient workspaces</span> | workforce
                 </h1>
-                <p class="intro-copy">Gain deep insight with our <strong>WorkSpa Wellbeing Audit</strong>. Our two-step
-                    process combines quantitative and qualitative data to ensure cost-effective, results-oriented
-                    investment in your employees.</p>
+                <p class="intro-copy">Helping corporate clients with health and wellness programmes to ensure employee engagement and organisational performance.</p>
                 <div class="hero-btns">
-                    <a href="#services" class="btn btn-primary">Explore Our Audit Process</a>
+                    <a href="#services" class="btn btn-primary">Our Competence</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -64,369 +68,188 @@
             <!-- Tabs Component -->
             <div class="tabs-container">
                 <div class="tabs-header">
-                    <button class="tab-btn active" data-tab="audit">Wellbeing Audit</button>
-                    <button class="tab-btn" data-tab="massage">Office Massage</button>
-                    <button class="tab-btn" data-tab="nutrition">Nutrition</button>
-                    <button class="tab-btn" data-tab="bodyhealth">BodyHealth</button>
-                    <button class="tab-btn" data-tab="mindhealth">MindHealth</button>
+                    <button class="tab-btn active" data-tab="assessments">Health Assessments</button>
+                    <button class="tab-btn" data-tab="movement">Movement Sessions</button>
+                    <button class="tab-btn" data-tab="mental">Mental Health</button>
+                    <button class="tab-btn" data-tab="workshops">Specialist Workshops</button>
                 </div>
 
                 <div class="tabs-content">
-                    <!-- Wellbeing Audit -->
-                    <div id="audit" class="tab-panel active">
+                    <!-- Health Assessments -->
+                    <div id="assessments" class="tab-panel active">
                         <div class="card-grid">
                             <div class="card-image">
-                                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2070"
-                                    alt="Health Assessment">
+                                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2070" alt="Health Assessment">
                             </div>
                             <div class="card-body">
-                                <span class="price-tag">Process-Driven Insight</span>
-                                <h3>The Wellbeing Audit</h3>
-                                <p>Our two-step process allows you to acquire quantitative and qualitative data with the
-                                    support of our wellbeing consultants. The resulting report informs all future
-                                    proposals, plans, and policies to ensure maximum ROI on employee health.</p>
-                                <a href="#contact" class="btn-text">REQUEST AUDIT DETAILS →</a>
+                                <h3>Health Assessments</h3>
+                                <p>Including waking heart rate monitoring, movement screening, sleep quality assessment, blood testing, heart rate variability (HRV) analysis, and clinical posture reviews to establish measurable baselines and track improvement over time.</p>
+                                <a href="#contact" class="btn-text">READ MORE | GET DETAILS →</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Office Massage -->
-                    <div id="massage" class="tab-panel">
+                    <!-- Movement Sessions -->
+                    <div id="movement" class="tab-panel">
                         <div class="card-grid">
                             <div class="card-image">
-                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1920"
-                                    alt="Office Massage">
+                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1920" alt="Movement Sessions">
                             </div>
                             <div class="card-body">
-                                <span class="price-tag">From £700 | Award-Winning</span>
-                                <h3>Renowned Office Massage</h3>
-                                <p>Seated chair massage for up to 54 employees per session. Our CthA & FHT certified
-                                    therapists provide 15-minute sessions on ergonomic chairs, utilizing high-quality
-                                    essential oils and wireless headphones for a multisensory mindfulness experience.
-                                </p>
-                                <p class="quote-text-small">"WorkSpa practitioners provided incredible tips on self-care
-                                    that our teams can do at their desks."</p>
-                                <a href="#contact" class="btn-text">BOOK MASSAGE SESSION →</a>
+                                <h3>Movement Sessions</h3>
+                                <p>Regular onsite or online sessions led by experienced teachers to enhance mobility, strength, flexibility, and stress resilience. This includes massages delivered by clinically trained therapists who identify and treat muscle imbalances, lower back pain, neck and shoulder tension, and plantar fasciitis.</p>
+                                <a href="#contact" class="btn-text">READ MORE | GET DETAILS →</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Nutrition -->
-                    <div id="nutrition" class="tab-panel">
+                    <!-- Mental Health -->
+                    <div id="mental" class="tab-panel">
                         <div class="card-grid">
                             <div class="card-image">
-                                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=1920"
-                                    alt="Nutrition">
+                                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1920" alt="Mental Health">
                             </div>
                             <div class="card-body">
-                                <span class="price-tag">From £2000 | BANT Registered</span>
-                                <h3>Nutrition Programmes</h3>
-                                <p>Led by our Gut and Hormone Naturopathic Health Specialist. Workshops include 'Optimum
-                                    Health', 'Happy Gut, Happy Brain', and specialized Women’s/Men’s Health sessions
-                                    focused on hormonal balance and stress recovery.</p>
-                                <a href="#contact" class="btn-text">EXPLORE NUTRITION →</a>
+                                <h3>Mental Health</h3>
+                                <p>Our employee mental health programmes range from regular mindfulness and breathwork sessions to tailored mental health workshops. Our programmes are focused to address stress, anxiety and workplace burnout delivered by our experienced mental health experts. The objective is to ensure balanced emotional, psychological and social wellbeing of your workforce.</p>
+                                <a href="#contact" class="btn-text">READ MORE | GET DETAILS →</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- BodyHealth -->
-                    <div id="bodyhealth" class="tab-panel">
+                    <!-- Workshops -->
+                    <div id="workshops" class="tab-panel">
                         <div class="card-grid">
                             <div class="card-image">
-                                <img src="https://images.unsplash.com/photo-1545208393-596371ec02a5?auto=format&fit=crop&q=80&w=1920"
-                                    alt="BodyHealth">
+                                <img src="https://images.unsplash.com/photo-1545208393-596371ec02a5?auto=format&fit=crop&q=80&w=1920" alt="Workshops">
                             </div>
                             <div class="card-body">
-                                <span class="price-tag">From £1500 | Yoga & Sound</span>
-                                <h3>BodyHealth Workshops</h3>
-                                <p>Flexible sessions designed for balance. Includes 'Body & Breathe' stretch classes
-                                    focused on postural demands and 'Sound Bath' meditative journeys using Himalayan
-                                    singing bowls and Koshi chimes. Recommended group size: 20.</p>
-                                <a href="#contact" class="btn-text">BOOK WORKSHOP →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- MindHealth -->
-                    <div id="mindhealth" class="tab-panel">
-                        <div class="card-grid">
-                            <div class="card-image">
-                                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1920"
-                                    alt="MindHealth">
-                            </div>
-                            <div class="card-body">
-                                <span class="price-tag">From £2000 | Expert Led</span>
-                                <h3>MindHealth Three-Part Programme</h3>
-                                <p>Evidence-based workshops: 1. Understanding Mental Health at Work, 2. Beating Burnout
-                                    (Stress & Anxiety), and 3. Constructive Conversations & Resilience. Developed by top
-                                    psychotherapists.</p>
-                                <a href="#contact" class="btn-text">VIEW PROGRAMME →</a>
+                                <h3>Specialist Workshops and Wellbeing Events</h3>
+                                <p>Expert-led sessions on sleep, gut health, pregnancy, peri- and menopause, pelvic floor health, recovery, rehabilitation and diversity for seamless integration to the workplace.</p>
+                                <a href="#contact" class="btn-text">READ MORE | GET DETAILS →</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- New Section: Healthy Workforce / Stats Intro -->
+    <section class="section">
+        <div class="container text-center">
+            <span class="text-overline">Wellness is a critical investment</span>
+            <h2 class="section-title" style="margin-left: 0; max-width: 900px;">Employee health is business health</h2>
+            <p class="intro-copy max-width-800" style="margin-left: 0; text-align: left;">In the UK, over 185 million working days are lost each year due to sickness or injury, with stress, anxiety, depression, and musculoskeletal pain among the leading causes. Corporate wellbeing programmes are now recognised as a critical investment in employee engagement and organisational performance. Our mission is to help businesses reduce absenteeism and improve retention through evidence-based workplace wellness strategies that deliver measurable outcomes.</p>
         </div>
     </section>
 
     <!-- Statistics Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <span class="text-overline">Employee wellbeing statistics speak for themselves</span>
+            <div class="stats-grid" style="margin-top: 2rem;">
+                <div class="stats-list">
+                    <div class="stat-item">
+                        <div class="stat-number text-highlight">185.6m</div>
+                        <div class="stat-content">
+                            <h4>working days lost to sickness or injury each year</h4>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number text-highlight">9.8%</div>
+                        <div class="stat-content">
+                            <h4>share of mental health conditions of employee absences</h4>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number text-highlight">2.6%</div>
+                        <div class="stat-content">
+                            <h4>increase in sickness absence rate in the UK</h4>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" style="margin-top: 2rem; align-self: flex-start;">FIND MORE STATS</a>
+                </div>
+                <div class="stats-image">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1920"
+                        alt="Consultant working" class="main-img" style="height: 600px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academy Section -->
     <section class="section">
-        <div class="container stats-grid">
-            <div class="stats-image">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1920"
-                    alt="Consultant working" class="main-img" style="height: 700px;">
+        <div class="container">
+            <span class="text-overline">Quality and High Standards</span>
+            <h2 class="section-title" style="margin-left: 0; max-width: 1000px;">Further education and certified professional development are integral to the quality of wellness services offered by Thames Health and Wellness</h2>
+            
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-top: var(--space-l); align-items: start;">
+                <div class="benefit-card">
+                    <h4>Teacher Training</h4>
+                    <p>Offering certified 200hr to 500hr base level teacher trainings.</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>Further Education</h4>
+                    <p>Continuing professional development through workshops and courses focusing on a specialist area, such as anatomy, a selected yoga style (yin, vinyasa, ashtanga etc) or a supporting practise (meditation) or a skillset (first aid).</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>Research</h4>
+                    <p>Academic research in the field of yoga and other spiritual practises in collaboration with our partnership colleges and universities.</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>Community</h4>
+                    <p>Building a community and providing a safe space and inclusive environment where people can deepen their yoga and other spiritual practises.</p>
+                </div>
             </div>
-            <div class="stats-list">
-                <div class="stat-item">
-                    <div class="stat-number">95<span class="text-highlight">%</span></div>
-                    <div class="stat-content">
-                        <h4>Employee Engagement</h4>
-                        <p>Our programmes consistently deliver a significant uplift in measurable employee sentiment and
-                            participation across our corporate partners.</p>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">40<span class="text-highlight">+</span></div>
-                    <div class="stat-content">
-                        <h4>Wellness Experts</h4>
-                        <p>Our network comprises clinically trained medical practitioners, mental health specialists,
-                            and holistic wellness educators.</p>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">12<span class="text-highlight">k</span></div>
-                    <div class="stat-content">
-                        <h4>Assessments Completed</h4>
-                        <p>We use robust data to track health improvements, helping organisations mitigate risk and
-                            improve long-term performance.</p>
-                    </div>
-                </div>
+            <div style="margin-top: var(--space-m);">
+                <a href="#contact" class="btn btn-primary">CONTACT THE ACADEMY</a>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Grid -->
+    <!-- Why | About (Expertise & Approach) -->
     <section class="section bg-light">
         <div class="container">
-            <span class="text-overline">Why Choose Us</span>
-            <h2 class="section-title">The Thames Wellness Advantage</h2>
-            <div class="benefits-grid">
-                <div class="benefit-col">
-                    <div class="benefit-card">
-                        <h4>Data-Driven Insights</h4>
-                        <p>We move beyond subjective feedback, providing objective metrics on workforce health profile.
-                        </p>
-                    </div>
-                    <div class="benefit-card" style="margin-top: 1rem;">
-                        <h4>Clinical Excellence</h4>
-                        <p>Our sessions are led by practitioners with deep clinical roots and medical understanding.
-                        </p>
-                    </div>
+            <span class="text-overline">Bringing health and movement to workplace</span>
+            <h2 class="section-title" style="margin-left: 0;">We bring health and movement expertise to your workplace to boost your employee resilience and performance</h2>
+            <div class="card-grid" style="grid-template-columns: 1fr 1fr; gap: var(--space-l); align-items: stretch;">
+                <div class="benefit-card">
+                    <h4>Our Expertise</h4>
+                    <p>Thames Health and Wellness bring together versatile backgrounds with health and movement expertise with a vision to converge Western medical practise and Eastern holistic traditions. Our 20 years of global health and movement experience is driven by the analytical data-based strategies.</p>
                 </div>
-                <div class="benefit-focal-card benefit-card">
-                    <div>
-                        <h4>Holistic Integration</h4>
-                        <p>We bridge the transition from medical assessment to emotional and physical restoration.</p>
-                    </div>
-                    <img src="https://images.unsplash.com/photo-1545208393-596371ec02a5?auto=format&fit=crop&q=80&w=1920"
-                        alt="Focus" style="border-radius: var(--radius-m); margin: 1rem 0;">
-                    <div class="tag-cloud">
-                        <span class="tag">Resilient Mindset</span>
-                        <span class="tag">Physical Vitality</span>
-                        <span class="tag">Clinical Safety</span>
-                    </div>
+                <div class="benefit-card">
+                    <h4>Our Approach</h4>
+                    <p>We combine clinical rigour with holistic health principles. By integrating objective data with restorative practices, we create occupational health and wellbeing programmes that are measurable, meaningful, and sustainable. Our approach enables employees to move better, feel calmer, and perform at their best while reducing absenteeism and long-term health risks.</p>
                 </div>
-                <div class="benefit-col">
-                    <div class="benefit-card">
-                        <h4>Scale & Flexibility</h4>
-                        <p>Programmes tailored for global head offices down to boutique specialist teams.</p>
-                    </div>
-                    <div class="benefit-card" style="margin-top: 1rem;">
-                        <h4>Sustainable Change</h4>
-                        <p>We focus on building long-term habits that support organisational endurance.</p>
-                    </div>
-                </div>
+            </div>
+            <div style="margin-top: var(--space-m);">
+                <a href="#contact" class="btn btn-ghost" style="border-color: var(--color-magenta); color: var(--color-magenta);">MORE ABOUT THE TEAM</a>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team" class="section">
+    <!-- Partner With Us -->
+    <section class="section">
         <div class="container">
-            <span class="text-overline">Our Team</span>
-            <h2 class="section-title">Led by clinical and holistic excellence</h2>
-            <div class="team-grid">
-                <div class="team-card">
-                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=1920"
-                        alt="Director" class="team-image">
-                    <div class="team-info">
-                        <h4>Dr Sarah Jenkins</h4>
-                        <p>Clinical Health Lead | BANT Registered</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=1920"
-                        alt="Coach" class="team-image">
-                    <div class="team-info">
-                        <h4>Marcus Thorne</h4>
-                        <p>Performance Consultant</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1920"
-                        alt="Therapist" class="team-image">
-                    <div class="team-info">
-                        <h4>Elisa Moretti</h4>
-                        <p>Holistic Specialist | CthA & FHT Certified</p>
-                    </div>
-                </div>
+            <div class="benefit-focal-card" style="padding: var(--space-l); border-radius: var(--radius-l);">
+                <h2 style="color: var(--color-white); margin-bottom: 1rem;">Become a Thames and Health Wellness Partner</h2>
+                <p style="color: var(--color-white); font-size: 1.25rem; margin-bottom: 2rem;">Join our network of wellness partners and health experts to deliver holistic wellbeing solutions to organisations in the UK.</p>
+                <a href="#contact" class="btn btn-ghost">PARTNER WITH US</a>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="section bg-light">
-        <div class="marquee-container">
-            <div class="marquee-content">
-                <div class="marquee-item"><span class="marquee-name">Goldman Sachs</span><span
-                        class="marquee-quote">"Insightful and educational health empowerment."</span></div>
-                <div class="marquee-item"><span class="marquee-name">HSBC</span><span class="marquee-quote">"Incredible
-                        self-care tips for desk-based teams."</span></div>
-                <div class="marquee-item"><span class="marquee-name">Deloitte</span><span class="marquee-quote">"The
-                        ultimate summer festival wellness partner."</span></div>
-                <div class="marquee-item"><span class="marquee-name">BP</span><span
-                        class="marquee-quote">"Cost-effective and results-oriented investment."</span></div>
-                <!-- Repeat for seamless loop -->
-                <div class="marquee-item"><span class="marquee-name">Goldman Sachs</span><span
-                        class="marquee-quote">"Insightful and educational health empowerment."</span></div>
-                <div class="marquee-item"><span class="marquee-name">HSBC</span><span class="marquee-quote">"Incredible
-                        self-care tips for desk-based teams."</span></div>
-                <div class="marquee-item"><span class="marquee-name">Deloitte</span><span class="marquee-quote">"The
-                        ultimate summer festival wellness partner."</span></div>
-                <div class="marquee-item"><span class="marquee-name">BP</span><span
-                        class="marquee-quote">"Cost-effective and results-oriented investment."</span></div>
-            </div>
-        </div>
+    <!-- Contact CTA -->
+    <section id="contact" class="section bg-light">
         <div class="container">
-            <div class="testimonial-featured">
-                <div class="testimonial-content">
-                    <span class="text-overline">Case Study</span>
-                    <p class="quote-text">"Thames Wellness has redefined what health means for our organisation. Their
-                        bridge between data and holistic restoration is unique in the market."</p>
-                    <h4>James Arrington</h4>
-                    <p>HR Director | Core Global</p>
-                </div>
-                <div class="testimonial-image">
-                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=1920"
-                        alt="Portrait" class="main-img" style="height: 400px;">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Latest Stories -->
-    <section id="stories" class="section">
-        <div class="container">
-            <div class="stories-header">
-                <div>
-                    <span class="text-overline">Latest Stories</span>
-                    <h2 class="section-title" style="margin-bottom: 0;">Insights and perspectives</h2>
-                </div>
-                <a href="#" class="btn btn-secondary">More Stories</a>
-            </div>
-
-            <div class="post-featured">
-                <div class="post-image">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1920"
-                        alt="Story">
-                </div>
-                <div class="post-body">
-                    <span class="text-overline" style="padding: 0.2rem 0.8rem; font-size: 0.7rem;">Corporate Health</span>
-                    <h3>Managing Burnout in the Post-Digital Age</h3>
-                    <p>How clinical data is helping head offices navigate the transition to hybrid performance models.
-                    </p>
-                    <a href="#" class="btn-text" style="margin-top: 1rem;">READ STORY →</a>
-                </div>
-            </div>
-
-            <div class="post-grid">
-                <div class="post-card">
-                    <div class="post-image">
-                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1920"
-                            alt="Session">
-                    </div>
-                    <div class="post-body">
-                        <h4>The Science of Breath</h4>
-                        <p>Clinical HRV improvements recorded during our 12-week mindfulness pilot.</p>
-                        <a href="#" class="btn-text">READ MORE →</a>
-                    </div>
-                </div>
-                <div class="post-card">
-                    <div class="post-image">
-                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1920"
-                            alt="Yoga">
-                    </div>
-                    <div class="post-body">
-                        <h4>Movement at Work</h4>
-                        <p>Why ergonomic assessment is only half the battle for employee vitality.</p>
-                        <a href="#" class="btn-text">READ MORE →</a>
-                    </div>
-                </div>
-                <div class="post-card">
-                    <div class="post-image">
-                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1920"
-                            alt="Clinic">
-                    </div>
-                    <div class="post-body">
-                        <h4>Sleep & Performance</h4>
-                        <p>Tracking the link between overnight recovery and executive decision making.</p>
-                        <a href="#" class="btn-text">READ MORE →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Away Days & Events -->
-    <section id="events" class="section" style="background-color: var(--color-primary-light);">
-        <div class="container">
-            <div class="card-grid" style="grid-template-columns: 1fr 1fr; gap: var(--space-l); align-items: center;">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1920"
-                        alt="Team Event"
-                        style="border-radius: var(--radius-l); width: 100%; height: 500px; object-fit: cover;">
-                </div>
-                <div>
-                    <span class="text-overline">Corporate Retreats</span>
-                    <h2 class="section-title">Away Days & Events</h2>
-                    <p class="intro-copy">Our Mind & Body Away Days are an immersive opportunity to decompress, connect,
-                        and focus on self-care. We curate bespoke experiences combining workshops, talks, massages, and
-                        physical activities for both office and offsite locations.</p>
-                    <div class="quote-text-small">
-                        "WorkSpa has been supporting our annual summer festival for the past three years. Their
-                        therapists do an incredible job creating a therapeutic, relaxing space for our team. The
-                        experience is always a hit!"
-                    </div>
-                    <span class="price-tag">Bespoke Pricing | 20+ Attendees</span>
-                    <a href="#contact" class="btn btn-primary" style="margin-top: 2rem;">REQUEST EVENT BROCHURE</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 3: Contact -->
-    <section id="contact" class="section">
-        <div class="container">
-            <span class="text-overline">Get in Touch</span>
-            <h2 class="section-title">Ready to transform your workspace?</h2>
-            <p class="intro-copy max-width-800">Contact our specialist team today to discuss how we can support your
-                organisation's health and wellness goals.</p>
+            <span class="text-overline">Contact us</span>
+            <h2 class="section-title" style="margin-left: 0;">Are you ready to enhance workplace wellbeing and employee performance?</h2>
+            <p class="intro-copy max-width-800" style="margin-left: 0;">Have a question about our services or want to discuss your organisation's wellness needs?<br>Our team is ready to help you find the right solution.</p>
             <div class="contact-box">
-                <p>Email: <a href="mailto:info@thameswellness.co.uk"
-                        class="text-highlight">info@thameswellness.co.uk</a></p>
+                <p>Email: <a href="mailto:info@thameswellness.co.uk" class="text-highlight">info@thameswellness.co.uk</a></p>
                 <p>Location: London, United Kingdom</p>
-                <a href="mailto:info@thameswellness.co.uk" class="btn btn-primary" style="margin-top: 2rem;">Send
-                    Enquiry</a>
+                <a href="mailto:info@thameswellness.co.uk" class="btn btn-primary" style="margin-top: 2rem;">Contact Form</a>
             </div>
         </div>
     </section>
@@ -434,7 +257,15 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-brand">
-                <span class="logo-text">THAMES<span class="text-highlight">WELLNESS</span></span>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#c5a059" stroke-width="4"/>
+                        <path d="M 25 35 Q 37.5 25 50 35 T 75 35" fill="none" stroke="#c5a059" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M 25 50 Q 37.5 40 50 50 T 75 50" fill="none" stroke="#c5a059" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M 25 65 Q 37.5 55 50 65 T 75 65" fill="none" stroke="#c5a059" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">THAMES<span class="text-highlight">WELLNESS</span></span>
+                </div>
                 <p>Bridging the gap between medical practice and holistic traditions.</p>
             </div>
             <div class="footer-links">
