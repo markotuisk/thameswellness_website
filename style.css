@@ -143,12 +143,47 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    
+    /* Liquid Glass Effect */
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    
+    /* Border Highlights */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    
+    /* Variable Shadowing */
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.02),
+        0 24px 40px rgba(0, 0, 0, 0.04);
+        
     padding: var(--space-s) 0;
     transition: var(--transition-normal);
+}
+
+/* Liquid Glass Utilities */
+.liquid-glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 24px 40px rgba(0, 0, 0, 0.08);
+}
+
+.liquid-glass-dark {
+    background: rgba(26, 26, 26, 0.35);
+    backdrop-filter: blur(24px) saturate(180%); 
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 24px 40px rgba(0, 0, 0, 0.2);
+}
+
+.vibrancy-text {
+    mix-blend-mode: overlay;
 }
 
 .nav-content {
@@ -295,12 +330,18 @@ img {
 }
 
 .tabs-content {
-    background: var(--color-white);
     border-radius: var(--radius-m);
     padding: var(--space-m);
     min-height: 400px;
-    border: 1px solid var(--color-grey-light);
     position: relative;
+    
+    /* Liquid Glass Light */
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 24px 40px rgba(0, 0, 0, 0.04);
 }
 
 .tab-panel {
@@ -403,9 +444,16 @@ img {
 .contact-box {
     margin-top: var(--space-m);
     padding: var(--space-l);
-    background: var(--color-grey-light);
     border-radius: var(--radius-l);
     display: inline-block;
+    
+    /* Liquid Glass Light */
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 24px 40px rgba(0, 0, 0, 0.04);
 }
 
 .contact-box p {
@@ -456,10 +504,16 @@ img {
 }
 
 .benefit-card {
-    background: var(--color-white);
     padding: var(--space-m);
     border-radius: var(--radius-l);
-    border: 1px solid var(--color-grey-light);
+    
+    /* Liquid Glass Light */
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 24px 40px rgba(0, 0, 0, 0.04);
 }
 
 .benefit-card h4 {
@@ -575,11 +629,17 @@ img {
     grid-template-columns: 1.5fr 1fr;
     gap: var(--space-xl);
     align-items: center;
-    background: var(--color-white);
     padding: var(--space-xl);
     border-radius: var(--radius-l);
-    border: 1px solid var(--color-grey-light);
     margin-top: var(--space-l);
+    
+    /* Liquid Glass Light */
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 24px 40px rgba(0, 0, 0, 0.04);
 }
 
 .quote-text {
@@ -602,11 +662,17 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-l);
-    background: var(--color-white);
     border-radius: var(--radius-xl);
     overflow: hidden;
     margin-bottom: var(--space-l);
-    border: 1px solid var(--color-grey-light);
+    
+    /* Liquid Glass Light */
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 24px 40px rgba(0, 0, 0, 0.04);
 }
 
 .post-featured .post-image {
@@ -627,10 +693,16 @@ img {
 }
 
 .post-card {
-    background: var(--color-white);
     border-radius: var(--radius-l);
     overflow: hidden;
-    border: 1px solid var(--color-grey-light);
+    
+    /* Liquid Glass Light */
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02), 0 24px 40px rgba(0, 0, 0, 0.04);
 }
 
 .post-card .post-image {
